@@ -38,6 +38,12 @@ header h2 {
   align-items: center;
 }
 
+header .column span {
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 1.19rem;
+}
+
 .piano-keys .key {
   list-style: none;
   color: #a2a2a2;

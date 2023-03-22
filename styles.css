@@ -70,6 +70,12 @@ header .column span {
   position: absolute;
   background: #8c8c8c;
   transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before {
+  left: 35px;
+  background: #fff;
 }
 
 .piano-keys .key {

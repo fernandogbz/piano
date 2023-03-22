@@ -28,3 +28,8 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.piano-keys .key {
+  list-style: none;
+  color: #a2a2a2;
+}

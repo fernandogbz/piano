@@ -78,7 +78,31 @@ header .column span {
   background: #fff;
 }
 
+.piano-keys {
+  display: flex;
+  margin-top: 40px;
+}
+
 .piano-keys .key {
+  cursor: pointer;
   list-style: none;
   color: #a2a2a2;
+  text-transform: uppercase;
+}
+
+.piano-keys .white {
+  width: 70px;
+  height: 230px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: linear-gradient(#fff 95%, #eee 5%);
+}
+
+.piano-keys .black {
+  width: 45px;
+  height: 140px;
+  z-index: 2;
+  margin: 0 -22px 0 -22px;
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(#333, #000);
 }

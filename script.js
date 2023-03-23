@@ -22,6 +22,11 @@ pianoKeys.forEach(key => {
   key.addEventListener("click", () => playTune(key.dataset.key));
 });
 
+const handleVolume = (e) => {
+  //To set audio volume, value must be between 0 and 1, 0 is 0%, 0.5 is 50%, and 1 is 100%
+  audio.volume = e.target.value; // passing the range slider value as an audio volume
+}
+
 const pressedKey = (e) => {
   // if the pressed key is in the allKeys array, only call the playTune function
   if(allKeys.includes(e.key)) playTune(e.key);

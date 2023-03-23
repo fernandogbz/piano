@@ -13,7 +13,7 @@ pianoKeys.forEach(key => {
 });
 
 const pressedKey = (e) => {
-  console.log(e);
+  playTune(e.key);
 }
 
 document.addEventListener("keydown", pressedKey);

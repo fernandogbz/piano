@@ -27,4 +27,5 @@ const pressedKey = (e) => {
   if(allKeys.includes(e.key)) playTune(e.key);
 }
 
+volumeSlider.addEventListener("input", handleVolume);
 document.addEventListener("keydown", pressedKey);

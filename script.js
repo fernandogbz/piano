@@ -28,6 +28,11 @@ const handleVolume = (e) => {
   audio.volume = e.target.value; // passing the range slider value as an audio volume
 }
 
+const showHideKeys = () => {
+  // toggling hide class from each key on the checkbox click
+  pianoKeys.forEach(key => key.classList.toggle("hide"));
+}
+
 const pressedKey = (e) => {
   // if the pressed key is in the allKeys array, only call the playTune function
   if(allKeys.includes(e.key)) playTune(e.key);

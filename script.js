@@ -7,7 +7,10 @@ const playTune = (key) => {
   audio.play(); // playing audio
 
   const clickedKey = document.querySelector(`[data-key="${key}"]`); // Getting clicked key element
-  clickedKey.classList.add("active");
+  clickedKey.classList.add("active"); // Adding active class to the clicked key element
+  setTimeout(() => { // Removing active class after 150ms from the clicked key element
+    clickedKey.classList.remove("active");
+  }, 150);
 }
 
 pianoKeys.forEach(key => {
